@@ -39,5 +39,15 @@ const Status = styled.div`
     background: #9d9d9d;
     border-radius: 10px;
     margin-left: 1rem;
+
+    ${StyledInput}:focus + & {
+        background: #ffa689;
+    }
+    ${StyledInput}:invalid + & {
+        background: #fe2f75;
+    }
+    ${StyledInput}:valid + & {
+        background: #70edb9;
+    }
 `;
 export default Input
